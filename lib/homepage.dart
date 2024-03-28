@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class Homepage extends StatelessWidget {
+  const Homepage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -12,26 +14,27 @@ class Homepage extends StatelessWidget {
         child: SingleChildScrollView(
           child: Column(
             children: [
-              SizedBox(
+              const SizedBox(
                 height: 10,
               ),
               Padding(
-                padding: EdgeInsets.symmetric(horizontal: 20),
+                padding: const EdgeInsets.symmetric(horizontal: 20),
                 child: TextFormField(
                   decoration: InputDecoration(
                     filled: true,
                     fillColor: Colors.white,
                     labelText: "sercsh",
-                    prefixIcon: Icon(Icons.search),
-                    labelStyle: TextStyle(color: Colors.black, fontSize: 20),
+                    prefixIcon: const Icon(Icons.search),
+                    labelStyle:
+                        const TextStyle(color: Colors.black, fontSize: 20),
                     border: OutlineInputBorder(
-                      borderSide: BorderSide(width: 5, color: Colors.red),
+                      borderSide: const BorderSide(width: 5, color: Colors.red),
                       borderRadius: BorderRadius.circular(20),
                     ),
                   ),
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 20,
               ),
               Container(
@@ -40,7 +43,7 @@ class Homepage extends StatelessWidget {
                 decoration: BoxDecoration(
                   color: const Color.fromARGB(255, 96, 96, 82),
                   borderRadius: BorderRadius.circular(20),
-                  boxShadow: [
+                  boxShadow: const [
                     BoxShadow(
                       color: Colors.black,
                       blurRadius: 5,
@@ -48,8 +51,8 @@ class Homepage extends StatelessWidget {
                     ),
                   ],
                 ),
-                child: Padding(
-                  padding: const EdgeInsets.only(bottom: 30, left: 30, top: 15),
+                child: const Padding(
+                  padding: EdgeInsets.only(bottom: 30, left: 30, top: 15),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
@@ -114,14 +117,14 @@ class Homepage extends StatelessWidget {
                   ),
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 200,
               ),
               Column(
                 children: [
                   Container(
                     height: 300,
-                    decoration: BoxDecoration(),
+                    decoration: const BoxDecoration(),
                     child: Image.network(
                       "https://cdn.arabsstock.com/uploads/images/111714/image-111714-concept-softness-femininity-personal-photo-official-docum-search_large.jpg",
                     ),
@@ -135,3 +138,6 @@ class Homepage extends StatelessWidget {
     );
   }
 }
+
+
+//i add a comment
